@@ -12,7 +12,7 @@ import upc.ms.fast.beat.types.UnidadDTO;
 import java.util.List;
 
 
-@Controller
+@RestController
 @RequestMapping("/unidades")
 public class UnidadController {
 
