@@ -4,6 +4,7 @@ package upc.ms.fast.beat.controller;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import upc.ms.fast.beat.config.FastBeatProperties;
 import upc.ms.fast.beat.service.IChoferService;
 import upc.ms.fast.beat.types.ChoferDTO;
 import upc.ms.fast.beat.types.JSONResultDTO;
@@ -17,7 +18,8 @@ public class ChoferController {
 	
 	@Autowired
 	private IChoferService choferService;
-	
+
+
 	@ApiOperation(value = "Este método devuelve las unidades existentes")
 	@GetMapping
 	public JSONResultDTO<List<ChoferDTO>> findAll(){
